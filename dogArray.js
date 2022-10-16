@@ -22,7 +22,7 @@ Test data:
 § Data 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
 */
 
-/* 
+ 
 const checkDogs = (dogsJulia, dogsKate) => {
   const dogsJuliaCopy = dogsJulia.slice(1, 3);
   const newArray = [...dogsJuliaCopy, ...dogsKate];
@@ -39,7 +39,7 @@ const checkDogs = (dogsJulia, dogsKate) => {
 
 checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
 checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
-*/
+
 
 /*
 Create a function 'calcAverageHumanAge', which accepts an arrays of dog's ages ('ages'), and does the following things in order:
