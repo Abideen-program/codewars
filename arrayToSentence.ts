@@ -1,7 +1,7 @@
 //take an array
 //return the words in the array as sentence
 
-function smash (words) {
+function smash (words: string[]) {
 	let sentence = '';
   	for (let i = 0; i < words.length; i++){
       	sentence += words[i]
@@ -17,7 +17,7 @@ smash(['hello', 'world', 'this', 'is', 'great'])  //'hello world this is great'
 // OR
 
 
-function sentence (words) {
+function sentence (words: string[]) {
 	return words.join(' ')
 };
 
