@@ -19,16 +19,14 @@ GOOD LUCK 😀
 //  increase the number of days by using (i + 1) and add to the string
 //  return string
 
-
-
-const printForecast = (array) => {
-    let output = '';
-    for (let i = 0; i < array.length; i++) {
-      output += `${array[i]}ºC in ${i + 1} days ... `
-    }
-  
-    return ('... ' + output);
+const printForecast = (array: number[]) => {
+  let output = "";
+  for (let i = 0; i < array.length; i++) {
+    output += `${array[i]}ºC in ${i + 1} days ... `;
   }
-  
-  console.log(printForecast([17, 21, 23]))
-  console.log(printForecast([12, 5, -5, 0, 4]))
+
+  return "... " + output;
+};
+
+console.log(printForecast([17, 21, 23]));
+console.log(printForecast([12, 5, -5, 0, 4]));
