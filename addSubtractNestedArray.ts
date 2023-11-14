@@ -10,21 +10,33 @@
 
 // The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 
-var number = function(busStops){
-    let enter = 0; // initialise people that enter to zero
-    let getDown = 0; // initialise people that get down to zero
-    let remain = 0; // initialise people that remain to zero
-    for (let i = 0; i < busStops.length; i++){
-        enter += busStops[i][0]; // add first integer in the each array to enter
-        getDown += busStops[i][1]; // add second integer in the each array to getDown
-        remain = enter - getDown; // find the difference
-    }
-    
-    return remain // return the difference
-  } 
-  number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]])
-  number([[10,0],[3,5],[5,8]])
+let number = function (busStops: number[][]) {
+  let enter = 0; // initialise people that enter to zero
+  let getDown = 0; // initialise people that get down to zero
+  let remain = 0; // initialise people that remain to zero
+  for (let i = 0; i < busStops.length; i++) {
+    enter += busStops[i][0]; // add first integer in the each array to enter
+    getDown += busStops[i][1]; // add second integer in the each array to getDown
+    remain = enter - getDown; // find the difference
+  }
 
-  //OR
+  return remain; // return the difference
+};
+number([
+  [3, 0],
+  [9, 1],
+  [4, 8],
+  [12, 2],
+  [6, 1],
+  [7, 8],
+]);
+number([
+  [10, 0],
+  [3, 5],
+  [5, 8],
+]);
 
-  const number = busStops => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
+//OR
+
+const numbers = (busStops) =>
+  busStops.reduce((rem, [on, off]) => rem + on - off, 0);
