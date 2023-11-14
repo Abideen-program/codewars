@@ -1,4 +1,4 @@
-const alphabetPosition = (text) => {
+const alphabetPosition = (text: string) => {
   //write out the alphabets
   let alphabets = "abcdefghijklmnopqrstuvwxyz";
   //change the string of alphabets into arrays
