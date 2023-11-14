@@ -10,7 +10,7 @@ if bmi <= 30.0 return "Overweight"
 if bmi > 30 return "Obese"
 */
 
-function bmi(weight, height) {
+function bmi(weight: number, height: number) {
   let BMI = weight / height ** 2;
   if (BMI <= 18.5) {
     return 'Underweight'
