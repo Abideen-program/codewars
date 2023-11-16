@@ -6,7 +6,7 @@
 // ""             =>  ""
 
 // complete the function
-function solution(string) {
+function solution(string: string) {
     //split the string into array of letters
     const splitString = string.split('')
     //map the letter to find the letter that is a capital letter
