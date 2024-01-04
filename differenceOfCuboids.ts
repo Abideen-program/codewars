@@ -4,7 +4,7 @@ In this simple exercise, you will create a program that will take two lists of i
 For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
 */
 
-function findDifference(a, b) {
+function findDifference(a: number[], b: number[]) {
   /* 
     let one = 1;
   let two = 1;
@@ -24,7 +24,10 @@ function findDifference(a, b) {
     difference = difference;
   }
   */
-  return Math.abs((a.reduce((previous, current) => previous * current, 1)) - (b.reduce((previous, current) => previous * current, 1)))
+  return Math.abs(
+    a.reduce((previous, current) => previous * current, 1) -
+      b.reduce((previous, current) => previous * current, 1)
+  );
 }
 
 console.log(findDifference([2, 2, 3], [5, 4, 1]));
