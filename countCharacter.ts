@@ -1,7 +1,7 @@
 /*count the number of character in a string 
 if its an empty string return empty object literal {}
 */
-function count(string) {
+function count(string: string) {
   //declear an empty object
   let object = {};
   //convert the string to an array
