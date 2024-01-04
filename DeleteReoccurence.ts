@@ -1,4 +1,4 @@
-function deleteNth(arr, n) {
+function deleteNth(arr: number[], n: number) {
   //declear an empty object
   let object = {};
   //return filter through the array, and populate the empty object
