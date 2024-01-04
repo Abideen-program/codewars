@@ -4,11 +4,11 @@
 // return the same number in a descending form;
 // Input: 12345 => 54321
 
-function descendingOrder(n){
+function descendingOrder(n: number){
     let number = n.toString() //change number to string
     return Number(
         number.split('') // split to numbers into individual numbers in an array
-        .sort((a, b) => b - a) // sort the number from heighest to lowest
+        .sort((a: any, b: any) => b - a) // sort the number from heighest to lowest
         .join('') // join the numbers together to string
     ) //change string to Number
 }
