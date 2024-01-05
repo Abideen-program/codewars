@@ -23,7 +23,7 @@ Test data:
 */
 
  
-const checkDogs = (dogsJulia, dogsKate) => {
+const checkDogs = (dogsJulia: number[], dogsKate:number[]) => {
   const dogsJuliaCopy = dogsJulia.slice(1, 3);
   const newArray = [...dogsJuliaCopy, ...dogsKate];
   console.log(newArray);
