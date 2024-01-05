@@ -1,7 +1,7 @@
 
 const numbers = [1, 2, 3, 4, 6, 9, 50, 7, 10]
 
-const max =  (numbers) => {
+const max =  (numbers: number[]) => {
     // declear a result to store an initial result
     let result = 0
     // lop throught the array of numbers
