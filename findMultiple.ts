@@ -4,8 +4,8 @@
 
 // (Return) array with interger divisor except 1 and integer
 
-function divisors(integer) {
-    let array = [];
+function divisors(integer: number) {
+    let array:number[] = [];
     for (let i = 2; i < integer; i++) {
       if (integer % i === 0){
             array.push(i)
