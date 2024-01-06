@@ -5,7 +5,7 @@
 // Function takes an array of containing the word 'needle'
 // return "found the needle at position + index"
 
-function findNeedle(haystack) {
+function findNeedle(haystack: string[]) {
     // your code here
     if (haystack.includes('needle')) // check if its true
     return `found the needle at position ${haystack.indexOf('needle')}`
