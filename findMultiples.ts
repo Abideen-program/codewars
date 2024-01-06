@@ -1,5 +1,5 @@
-function countBy(x, n) {
-    let z = [];
+function countBy(x:number, n:number) {
+    let z: number[] = [];
         while(n > 0){
         z.push(x * n)
         n--;
