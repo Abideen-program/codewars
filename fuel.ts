@@ -6,7 +6,7 @@ Considering these factors, write a function that tells you if it is possible to 
 Function should return true if it is possible and false if not.
 */
 
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+const zeroFuel = (distanceToPump: number, mpg: number, fuelLeft: number) => {
   // check if the product of the mgp and fuelLeft is >= distanceToPum
   if (mpg * fuelLeft >= distanceToPump) {
     return true;
