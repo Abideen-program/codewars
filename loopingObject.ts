@@ -27,7 +27,7 @@ const dataBase = {
   welsh: "Croeso",
 };
 
-function greet(language) {
+function greet(language: string) {
   // let greetings = "Welcome";
   // for (const key in dataBase) {
   //     if(language.toLowerCase() === key) {
