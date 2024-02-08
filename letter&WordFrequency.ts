@@ -1,6 +1,6 @@
 //CHECKING THE FREQUENCY OF THE LETTERS IN A WORD
 
-const howManyTimes = (phrase) => {
+const howManyTimes = (phrase: string) => {
   //create an empty object
   const frequency = {};
   // loop through the phrase
@@ -28,9 +28,9 @@ howManyTimes("haha");
 
 //CHECKING THE FREQUENCY OF THE LETTERS IN A WORD 
 
-senten = "lol tonight lol";
+const senten = "lol tonight lol";
 
-const wordFrequency = (sentences) => {
+const wordFrequency = (sentences: any) => {
 
     // Call the split method on the setence to change to an array
     const words = sentences.split(" ");
