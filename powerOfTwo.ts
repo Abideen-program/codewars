@@ -8,13 +8,12 @@ n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 
 */
 
-function powersOfTwo(n){
-
-    let powers = []
-    for (let i = 0; i <= n; i++) {
-        powers.push(2**i)
-    }
-    return powers
+function powersOfTwo(n: number) {
+  let powers: number[] = [];
+  for (let i = 0; i <= n; i++) {
+    powers.push(2 ** i);
+  }
+  return powers;
 }
 
 console.log(powersOfTwo(1));
