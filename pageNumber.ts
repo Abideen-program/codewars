@@ -12,16 +12,15 @@ Examples: (Input --> Output)
 
 */
 
-const number = function (array) {
+const number = function (array: string[]) {
   //your awesome code here
-    let output = []
-    for (let i = 0; i < array.length; i++) {
-        output.push(`${i + 1}: ${array[i]}`)
-    }
-    return output;
+  let output: string[] = [];
+  for (let i = 0; i < array.length; i++) {
+    output.push(`${i + 1}: ${array[i]}`);
+  }
+  return output;
 };
 
-console.log(number(['a', 'b', 'c']))
-console.log(number(['ade', 'bolu', 'car', 'girl']))
-console.log(number([]))
-
+console.log(number(["a", "b", "c"]));
+console.log(number(["ade", "bolu", "car", "girl"]));
+console.log(number([]));
