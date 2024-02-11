@@ -1,5 +1,5 @@
-function longest(s1, s2) {
-  const array = [];
+function longest(s1: string, s2: string) {
+  const array: string[] = [];
   let s3 = s1 + s2;
   s3.split("")
     .sort()
