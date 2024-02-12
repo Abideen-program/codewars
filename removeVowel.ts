@@ -1,4 +1,4 @@
-function disemvowel(string) {
+function disemvowel(string: string) {
   const vowels = "aieou";
 
   return string
