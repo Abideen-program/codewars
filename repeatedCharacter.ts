@@ -18,7 +18,7 @@ Example
 
 
 
-function duplicateCount(text){
+function duplicateCount(text: string){
     const string = text.toLowerCase()
     let word = {}
     for (const str of string) {
