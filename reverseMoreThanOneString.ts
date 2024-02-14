@@ -4,7 +4,7 @@
 // function reverses each word in the string with space retained,
 
 
-function reverseWords(str){
+function reverseWords(str:string){
     // Go for it
     return str.split(' ').map( item => item.split('').reverse().join('')).join(' ');
 }
