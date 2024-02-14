@@ -2,7 +2,7 @@
 
 // receive positive integers
 
-function digitize(n) { // receive the number
+function digitize(n:number) { // receive the number
     let number = n.toString() // change  the received number to string
     .split('') //split the string gotten into array with string of numbers
     .reverse() // reverse the string of numbers
