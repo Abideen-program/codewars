@@ -46,7 +46,7 @@ formatText("delayed_departure");
 const flights =
   "_Delayed_Departure;fao9574754;txl125645;11:25+_Arrival;bru02589;fao58945;11:45+_Delayed_Arrival;hel954855;fao954265;12:05+_Departure;fao78595;lis5896314;12:30";
 
-const changeCase = (code: string) => code.slice(0, 3).toUpperCase();
+const changeCase = (code) => code.slice(0, 3).toUpperCase();
 
 for (const flight of flights.split("+")) {
   const [type, from, to, time] = flight.split(";");
