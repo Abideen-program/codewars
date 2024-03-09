@@ -10,7 +10,7 @@ Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 */
 
-var twoSum = function (nums, target) {
+var twoSum = function (nums: number[], target: number) {
   let obj = {};
   for (let i = 0; i < nums.length; i++) {
     let n = nums[i];
