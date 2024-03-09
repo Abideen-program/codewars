@@ -1,4 +1,4 @@
-function switchItUp(number) {
+function switchItUp(number: number) {
   //Write your own Code!
   switch (number) {
     case 0:
